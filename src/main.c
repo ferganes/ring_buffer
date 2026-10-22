@@ -5,8 +5,8 @@
 
 typedef struct{
     uint8_t arr[RING_BUFFER_SIZE];
-    int head; // to write
-    int tail; // to read
+    volatile int head; // to write
+    volatile int tail; // to read
 } RingBuffer;
 
 
